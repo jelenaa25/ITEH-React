@@ -18,7 +18,7 @@
                 </div>
                 <div class="product-price-btn">
                     <p><span>{ud.cena}</span>RSD</p>
-                    <button type="button">buy now</button>
+                   
                 </div>
             </div>
       </div>
