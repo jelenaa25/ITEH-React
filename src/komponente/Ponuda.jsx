@@ -3,11 +3,12 @@ import DeloKartica from "./DeloKartica";
  
  
 
- function Ponuda() {
+ function Ponuda({svaDela}) {
    return (
       
         <div>
-            <DeloKartica></DeloKartica>
+            {svaDela.map((d)=> <DeloKartica key={d.id} ud={d}></DeloKartica>)}
+            
         </div>
  
  
