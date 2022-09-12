@@ -16,7 +16,7 @@ function App() {
       naziv:"UMETNICA",
       opis:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       slika:"https://www.serbianaart.rs/images/44650.jpg",
-      cena:15000,
+      cena:150000,
       autor:"Stojkovic Marija"
     },
     {
@@ -24,7 +24,7 @@ function App() {
       naziv:"UMETNICA",
       opis:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       slika:"https://www.serbianaart.rs/images/44650.jpg",
-      cena:15000,
+      cena:69999,
       autor:"Stojkovic Marija"
     },
     {
@@ -32,7 +32,7 @@ function App() {
       naziv:"UMETNICA",
       opis:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       slika:"https://www.serbianaart.rs/images/44650.jpg",
-      cena:15000,
+      cena:8000,
       autor:"Stojkovic Marija"
     },
     {
