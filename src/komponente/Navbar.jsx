@@ -6,6 +6,8 @@ function Navbar() {
      
         <nav className="navbar navbar-light bg-light justify-content-between">
         < Link  to="/" className="navbar-brand">Pocetna</Link>
+        < Link  to="/ponuda" className="navbar-brand">Ponuda</Link>
+
         < Link  to="/kontakt" className="navbar-brand">Kontakt</Link>
 
         <form className="form-inline">

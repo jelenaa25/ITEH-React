@@ -5,6 +5,7 @@ import Navbar from './komponente/Navbar';
 import Pocetna from './komponente/Pocetna';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from './komponente/Footer';
+import Ponuda from './komponente/Ponuda';
 function App() {
   return (
      <div>
@@ -14,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Pocetna></Pocetna>}></Route>
         <Route path="/kontakt" element={<Kontakt></Kontakt>}></Route>
+        <Route path="/ponuda" element={<Ponuda></Ponuda>}></Route>
+
 
       </Routes>
       <Footer></Footer>
