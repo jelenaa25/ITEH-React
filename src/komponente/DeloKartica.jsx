@@ -4,7 +4,7 @@
  function DeloKartica({ud}) {
     return (
        
-            <div className="wrapper">
+            <div className="wrapperP">
                 <div className="product-img">
                 <img src={ud.slika} height="420" width="327"/>
                 </div>

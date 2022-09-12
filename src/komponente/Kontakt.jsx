@@ -13,8 +13,7 @@ function Kontakt() {
        
 <section className="ftco-section">
 		<div className="container">
-			<div className="row justify-content-center">
-			</div>
+			 
 			<div className="row justify-content-center">
 				<div className="col-lg-10">
 					<div className="wrapper">

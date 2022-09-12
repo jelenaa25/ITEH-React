@@ -4,7 +4,7 @@
 function Navbar({postaviFilter}) {
   return (
      
-        <nav className="navbar navbar-light bg-light justify-content-between">
+        <nav className="navbar navbar-dark bg-dark">
         < Link  to="/" className="navbar-brand">Pocetna</Link>
         < Link  to="/ponuda" className="navbar-brand">Ponuda</Link>
 
@@ -12,7 +12,7 @@ function Navbar({postaviFilter}) {
 
         <form className="form-inline">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange={postaviFilter}/>
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+             
         </form>
         </nav>
 
