@@ -9,6 +9,12 @@ import Ponuda from './komponente/Ponuda';
 import { useState } from "react";
 function App() {
 
+  const [filter,setFilter]=useState("");
+  function postaviFilter(e){
+    setFilter(e.target.value)
+    osvezi();
+  }
+ 
 
   const [dela] = useState([
     {
@@ -21,7 +27,7 @@ function App() {
     },
     {
       id:2,
-      naziv:"UMETNICA",
+      naziv:"BROD",
       opis:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       slika:"https://www.serbianaart.rs/images/44650.jpg",
       cena:69999,
@@ -29,7 +35,7 @@ function App() {
     },
     {
       id:3,
-      naziv:"UMETNICA",
+      naziv:"ZENA",
       opis:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       slika:"https://www.serbianaart.rs/images/44650.jpg",
       cena:8000,
@@ -44,16 +50,24 @@ function App() {
       autor:"Stojkovic Marija"
     }
   ]);
-
+  const [filtriranaDela,setFiltriranaDela]= useState(dela);
+  function osvezi(){
+    console.log(filter);
+    if(filter=="")  
+    setFiltriranaDela(dela);
+    var niz = dela.filter((d)=> d.naziv.toLowerCase().includes(filter.toLowerCase()));
+    setFiltriranaDela(niz);
+    console.log(filtriranaDela)
+  }
   return (
      <div>
 
       <BrowserRouter>
-      <Navbar></Navbar>
+      <Navbar postaviFilter={postaviFilter}></Navbar>
       <Routes>
         <Route path="/" element={<Pocetna></Pocetna>}></Route>
         <Route path="/kontakt" element={<Kontakt></Kontakt>}></Route>
-        <Route path="/ponuda" element={<Ponuda svaDela={dela}></Ponuda>}></Route>
+        <Route path="/ponuda" element={<Ponuda svaDela={filtriranaDela}></Ponuda>}></Route>
 
 
       </Routes>
